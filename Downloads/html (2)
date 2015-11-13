@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script>
+        function setup() {//run once at the beginning
+            createCanvas(400, 400);
+            background(200);
+            //frameRate(5)
+        }
+        function draw() {//run forever in a loops
+        
+            //fill(random(255),random(255),random(255));
+            //ellipse(mouseX,mouseY,100,100);
+
+            //ellipse(width-mouseX,height-mouseY,100,100);
+            //ellipse(width/2,height/2,mouseX,mouseY);
+            //ellipse(mouseX,mouseY,mouseX,mouseY);
+            //background(mouseX, mouseY, 0);
+            //background(mouseX / 2, mouseY / 2, mouseX + mouseY);
+            
+            }
+            function mousePressed(){//run when mouse pressed
+            
+            
+            var diameter = random(100);
+            fill(random(255),random(255),random(255));
+            (mouseX,mouseY,diameter,diameter);
+            }
+            function keyPressed(){//runs whenever a key is pressed
+                
+                
+                
+            }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

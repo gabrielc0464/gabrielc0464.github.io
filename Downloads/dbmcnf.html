@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>Variable Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script>
+        // Initializing variables
+        var bColor
+        var centerX;
+        var centerY;
+
+        function setup() {
+            createCanvas(800, 400); // Size for art
+
+            // Bus colors 
+            bColor1 = random(100, 200);
+            bColor2 = random(100, 200);
+            bColor3 = random(100, 200);
+
+            // starting point for bus
+            centerX = 900;
+            centerY = 200;
+        }
+
+        function draw() {
+
+            fill(0); // BLACK for road
+            rect(0, 320, 800, 100); // Road rect
+
+            fill(110, 205, 255); // BLUE for background
+            rect(0, 0, 800, 320); // rect for background
+
+            rectMode(CENTER) // Sets the rectMode to CENTER
+
+            stroke(0); // Black border
+            fill(bColor1, bColor2, bColor3); // COLOR for bus (random)
+            rect(centerX, centerY, 500, 200); // Bus Shape
+
+            fill(110, 205, 255); // BLUE for Window
+            rect(centerX - 240, centerY - 40, 20, 80); // Front Window
+            rect(centerX + 25, 160, 360, 80); // Side Window
+
+            fill(0); // BLACK for tires
+            ellipse(centerX - 160, 280, 80, 80); // Left Tire
+            ellipse(centerX + 160, 280, 80, 80); // Right Tire
+
+            fill(0); // BLACK color for TEXT "Bus"
+            textSize(32); // size for "Bus"
+            text("Bus", centerX, 240); // Location of text "Bus"
+
+            centerX--; // Makes the bus go from right to left
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

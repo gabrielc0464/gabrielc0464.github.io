@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ 
+<head>
+    <title>Variables project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script>
+        var centerX;
+        var scale;
+        var rectWidth = 680;
+        var rectHeight = 110;
+            
+ 
+        function setup() {
+            createCanvas(700, 400);//size of the screen
+            centerX = 10;//where the circle will be placed 
+            scale = 2
+            fill(random(255),random(255),random(255)); //Every time you refresh circle changes color
+            ellipse(centerX * scale,70,random(10-90),80);//Size of the circle 
+        }
+ 
+        function draw() {
+            background(255,255,255);//color of background 
+            
+            
+        
+            ellipse(centerX * scale,70,random(10-90),80); //circle
+            fill(random(210),0,0); //color of box
+            rect(7,110,rectWidth * scale,rectHeight); //size of box
+            
+            centerX++;//Help make the circle move to the right side 
+            
+            
+            
+        }
+    </script>
+</head>
+ 
+<body>
+ 
+</body>
+ 
+</html>
+ 
+ 
